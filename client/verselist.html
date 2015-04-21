@@ -1,0 +1,10 @@
+<template name="verselist">
+	<ul>
+		{{#each verses}}
+			<li>{{key}}: {{verse}} <br/>
+			<iframe src="http://labs.bible.org/api/?passage={{verse}}"></iframe>
+			</li>
+		{{/each}}
+	</ul>
+</template>
+

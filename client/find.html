@@ -1,6 +1,21 @@
 <template name="find">
 	<form id='findVerse'>
-		Enter the keyword: <input type="text" name="key" id="key"/><br/>
-		<input type='submit'/>
+		      <select class="form-control" id="versepicker">
+				  <option>Select Verse Keyword</option>
+				  <option>love</option>
+				  <option>sharing</option>
+				  <option>universe</option>
+				</select>
 	</form>
+
+	<div>
+		<h1>Verses</h1>
+		{{> subverses}}
+	</div>
 </template>
+
+
+
+
+
+

@@ -1,8 +1,10 @@
 <template name="subverses">
-	<ul>
+	<ul class="list-group">
 		{{#each verses}}
-			<li>{{key}}: {{verse}} <br/>
-			<iframe src="http://labs.bible.org/api/?passage={{verse}}"></iframe>
+			<li class="list-group-item">
+			<h4 class="list-group-item-heading">{{verse}}</h4>
+			<iframe class="list-group-item-text passage" style="border:none; width:100%; overflow:hidden;" src="http://labs.bible.org/api/?passage={{verse}}"></iframe>
+			
 			</li>
 		{{/each}}
 	</ul>

@@ -1,3 +1,5 @@
 Template.subverses.helpers({
-	verses:function(){return Verses.find({key:Session.get("keyword")})}
+	verses:function(){
+		return Verses.find({key:Session.get("keyword")});
+	}
 })

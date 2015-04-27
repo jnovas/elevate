@@ -4,7 +4,6 @@ Template.find.events({
 	  var oldValue = Session.get("keyword");
 	  if (newValue != oldValue) {
 	    console.log(newValue);
-	    
 	  }
 	  Session.set("keyword", newValue);
 	}
